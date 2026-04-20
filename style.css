@@ -1088,10 +1088,11 @@ footer p {
   /* NAV */
   nav {
     height: auto;
-    padding: 1rem 1.2rem;
+    padding: 0.70rem 1.2rem;
     clip-path: none;
     flex-wrap: wrap;
     gap: 0.5rem;
+    justify-content: center;
 
     clip-path: polygon(
     0% 0%,
@@ -1111,15 +1112,23 @@ footer p {
     display: none; /* simpan ruang, logo text sudah ada */
   }
   .navl {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.8rem;
-    margin-bottom: 1rem;
-    width: 100%;
+    display: none;
   }
-  .navl a {
-    font-size: 0.65rem;
-  }
+  
+  .nav-logo-wrap {
+  display: flex;
+  align-items: center;
+  min-width: 20px;
+}
+
+.nav-logo-img {
+  height: 40px;
+  width: auto;
+  margin-bottom: 1px ;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px rgba(0, 180, 255, 0.7)) brightness(1.1);
+  border-radius: 4px;
+}
 
   /* SECTIONS padding */
   .sec {
